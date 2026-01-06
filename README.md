@@ -18,12 +18,11 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 ---
 
 ## Network Architecture
-![Enterprise Network Architecture](Gemini_Generated_Image_8psg448psg448psg.png)
 
 ### Key Components
-- **External Network**: ISP links, Cisco routers (HSRP), external switches
+- **External Network**: Cisco routers (HSRP), external switches
 - **Firewall Cluster**: pfSense HA setup for redundancy
-- **Internal Network**: Core switches, Active Directory server, SIEM, Zabbix, and Kali Linux for testing
+- **Internal Network**: Core switches (LACP), Active Directory server, SIEM, Zabbix, and Kali Linux for testing
 - VLAN segmentation for DMZ, internal, and management zones
 
 ---
@@ -52,22 +51,6 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 
 ---
 
-## Repository Structure
-```
-.
-├── README.md
-├── eve-ng-topology/
-│   └── enterprise-poc.unl
-├── configs/
-│   ├── cisco-switch.cfg
-│   ├── cisco-router.cfg
-│   └── pfSense-HA-config.xml
-├── docs/
-│   └── architecture-diagram.png
-└── scripts/
-    ├── deploy-ad.sh
-    ├── wazuh-install.sh
-    └── zabbix-install.sh
-```
+
 
 ---
