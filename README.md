@@ -27,7 +27,6 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 
 
 <img width="1536" height="672" alt="image" src="https://github.com/user-attachments/assets/b880072f-ec71-41ac-97ea-8710672d10c6" />
-<img width="1536" height="672" alt="image" src="https://github.com/user-attachments/assets/b880072f-ec71-41ac-97ea-8710672d10c6" />
 ## Tools & Technologies
 - **EVE-NG** for network emulation
 - **Cisco IOS** for routing and switching
@@ -50,8 +49,4 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 7. Run Atomic Red Team tests
 8. Validate monitoring and security alerts
 
----
 
-
-
----
