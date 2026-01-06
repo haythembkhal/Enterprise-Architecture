@@ -3,7 +3,7 @@
 ## Overview
 This project demonstrates how to design and deploy a **proof-of-concept enterprise network architecture** using **EVE-NG**. The goal is to build a realistic environment that includes network infrastructure, directory services, security monitoring, and attack simulation.
 
----
+
 
 ## Objectives
 - Model and deploy an enterprise network on **EVE-NG**
@@ -15,7 +15,7 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 - Implement **pfSense firewall cluster in High Availability (HA)**
 - Provide DNS/DHCP services via Active Directory
 
----
+
 
 ## Network Architecture
 
@@ -25,7 +25,7 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 - **Internal Network**: Core switches (LACP), Active Directory server, SIEM, Zabbix, and Kali Linux for testing
 - VLAN segmentation for DMZ, internal, and management zones
 
----
+https://github.com/haythembkhal/Enterprise-Architecture/blob/d76c5bae19772a7107b8ee0745761b062f2cc881/architecture.png
 
 ## Tools & Technologies
 - **EVE-NG** for network emulation
@@ -37,7 +37,7 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 - **Atomic Red Team** for attack simulation
 - **Kali Linux** for penetration testing
 
----
+
 
 ## Deployment Steps
 1. Build the topology in **EVE-NG**
