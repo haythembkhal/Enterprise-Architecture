@@ -24,7 +24,9 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 - **Firewall Cluster**: pfSense HA setup for redundancy
 - **Internal Network**: Core switches (LACP), Active Directory server, SIEM, Zabbix, and Kali Linux for testing
 - VLAN segmentation for DMZ, internal, and management zones
-  https://github.com/haythembkhal/Enterprise-Architecture/blob/main/architecture.png?raw=true
+
+## Network Architecture
+![Enterprise Network Architecture](https://github.com/haythembkhal/Enterprise-Architecture/blob/9cea25dfb67ef97c42bd2a4bb9ba52c3
 ## Tools & Technologies
 - **EVE-NG** for network emulation
 - **Cisco IOS** for routing and switching
