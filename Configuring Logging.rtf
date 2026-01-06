@@ -1,0 +1,8 @@
+conf t
+  snmp-server community public RO
+  logging host IP ADDRESS OF YOUR ZABBIX SERVER
+  logging trap informational
+  service timestamps log datetime msec
+  end
+  
+wr

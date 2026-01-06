@@ -1,0 +1,92 @@
+
+
+hostname CoreSw02
+exit
+vlan 200
+name FW-CORE-VLAN200
+exit
+vlan 300
+name Internal-VLAN300
+
+
+
+int vlan 200
+description FW-CORE VLAN
+no shutdown
+ip address 10.2.1.249 255.255.255.0
+standby 20 ip 10.2.1.251
+standby 20 preempt
+standby 20 authentication gob
+standby 20 track 1 decrement 10
+
+
+
+
+int vlan 300
+description FW-CORE VLAN
+no shutdown
+ip address 10.3.1.253 255.255.255.0
+standby 30 ip 10.3.1.254
+standby 30 preempt
+standby 30 authentication gob
+standby 30 track 1 decrement 10
+
+
+
+ip route 0.0.0.0 0.0.0.0 10.2.1.254
+
+
+interface port-channel1
+  description FW01 Port-Channel
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+  switchport trunk allowed vlan 200
+
+interface port-channel2
+  description CoreSw02 Port-Channel
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+  switchport trunk allowed vlan 200,300
+
+
+interface GigabitEthernet0/0
+  description FW02-uplink-E2
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+  switchport trunk allowed vlan 200
+  channel-group 1 mode active
+  no shutdown
+
+interface GigabitEthernet0/1
+  description FW02-uplink-E1
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+  switchport trunk allowed vlan 200
+  channel-group 1 mode active
+  no shutdown
+
+
+
+interface GigabitEthernet0/2
+  description CoreSw01-uplink-Gi0/2
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+  switchport trunk allowed vlan 200,300
+  channel-group 2 mode active
+  no shutdown
+
+interface GigabitEthernet0/3
+  description CoreSw01uplink-Gi0/3
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+  switchport trunk allowed vlan 200,300
+  channel-group 2 mode active
+  no shutdown
+
+interface GigabitEthernet1/0
+  description AccSw02-uplink-Gi0/0
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+  switchport trunk allowed vlan 200,300
+  no shutdown
+
