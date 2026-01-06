@@ -25,8 +25,9 @@ This project demonstrates how to design and deploy a **proof-of-concept enterpri
 - **Internal Network**: Core switches (LACP), Active Directory server, SIEM, Zabbix, and Kali Linux for testing
 - VLAN segmentation for DMZ, internal, and management zones
 
-## Network Architecture
-![Enterprise Network Architecture](https://github.com/haythembkhal/Enterprise-Architecture/blob/9cea25dfb67ef97c42bd2a4bb9ba52c3
+
+<img width="1536" height="672" alt="image" src="https://github.com/user-attachments/assets/b880072f-ec71-41ac-97ea-8710672d10c6" />
+<img width="1536" height="672" alt="image" src="https://github.com/user-attachments/assets/b880072f-ec71-41ac-97ea-8710672d10c6" />
 ## Tools & Technologies
 - **EVE-NG** for network emulation
 - **Cisco IOS** for routing and switching
